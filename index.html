@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Asadbek Rasulov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Task-Checkbox</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="checkbox__title">
+            Qaysi sport turiga qiziqasiz?
+        </h1>
+        <div class="checkbox">
+            <form action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+                <label>
+                    Stol tennisi
+                    <input type="checkbox" class="visually-hidden" name="ping-pong" value="ping-pong">
+                    <span class="input__controller input__controller--ping-pong"></span>
+                </label>
+                <label>
+                    Basketbol
+                    <input type="checkbox" class="visually-hidden" name="basketball" value="basketball">
+                    <span class="input__controller input__controller--basketball"></span>
+                </label>
+                <label>
+                    Volleybol
+                    <input type="checkbox" class="visually-hidden" name="volleyball" value="volleyball">
+                    <span class="input__controller input__controller--volleyball"></span>
+                </label>
+                <label class="hockey">
+                    <input type="checkbox" class="visually-hidden" name="hockey" value="hockey">
+                    <span class="input__controller input__controller--hockey"></span>
+                    <span class="title">Hokkey</span>
+                </label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 295px;
+    position: relative;
+}
+.checkbox__title {
+    margin-bottom: 35px;
+    font-size: 36px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+.input__controller {
+    position: absolute;
+    right: 745px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    border: 1px solid #3E3E3E;
+    border-radius: 5px;
+    transition: all .5s;
+    cursor: pointer;
+}
+input:checked ~ .input__controller--ping-pong {
+    background-image: url(../icons/table-tennis.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:disabled ~ .input__controller--ping-pong {
+    background-image: url(../icons/table-tennis.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:checked ~ .input__controller--basketball {
+    background-image: url(../icons/basketball-ball.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:disabled ~ .input__controller--basketball {
+    background-image: url(../icons/basketball-ball.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:checked ~ .input__controller--volleyball {
+    background-image: url(../icons/volleyball-ball.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input:disabled ~ .input__controller--volleyball {
+    background-image: url(../icons/volleyball-ball.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:checked ~ .input__controller--hockey {
+    background-image: url(../icons/hockey-puck.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    opacity: 0.4;
+}
+input:disabled ~ .input__controller--hockey {
+    background-image: url(../icons/hockey-puck.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    opacity: 0.8;
+}
+input:checked ~ .title {
+    opacity: 0.4;
+}
